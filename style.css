@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,700&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@1&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+body{
+    background: linear-gradient(-45deg, #3d348b, #fcf6bd, #3d348b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.w50{
+    width:50%;
+    float: left;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.img-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4);
+    padding: 30px 40px;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box{
+    font-size: 18px;
+}
+
+.form-box h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6a00f4;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .input-group{
+    margin-bottom: 15px;
+}
+
+form .input-group label{
+    color: #8900f2;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus{
+    border-color: #7209b7;
+}
+
+
+form .sexo-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.sexo-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.sexo-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background-color: #6a00f4;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3 ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .tree{
+    border-color: #7209b7;
+    background: #000;
+}
+
+form input[type="radio"]{
+    display:none;
+}
+
+form .butom{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .butom input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background-color: #6a00f4 ;
+}
